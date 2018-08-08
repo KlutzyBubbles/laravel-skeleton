@@ -1,8 +1,8 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
+    "name": "klutzybubbles/laravel-skeleton",
+    "description": "Fork Skeleton by KlutzyBubbles",
     "keywords": ["framework", "laravel"],
-    "license": "MIT",
+    "license": "Apache 2.0",
     "type": "project",
     "require": {
         "php": ">=7.0.0",
