@@ -2,7 +2,7 @@
     "name": "klutzybubbles/laravel-skeleton",
     "description": "Fork Skeleton by KlutzyBubbles",
     "keywords": ["framework", "laravel"],
-    "license": "Apache 2.0",
+    "license": "MIT",
     "type": "project",
     "require": {
         "php": ">=7.0.0",
