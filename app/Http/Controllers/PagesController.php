@@ -10,9 +10,11 @@ class PagesController extends Controller
         return view('welcome');
     }
 
-    public function about() {
-        $name = "Lee Tzilantonis";
-        $grade = rand(0, 100);
-        return view('pages.about', compact('name', 'grade'));
+    public function categories() {
+        return view('pages.categories');
+    }
+
+    public function movies() {
+        return view('pages.movies');
     }
 }

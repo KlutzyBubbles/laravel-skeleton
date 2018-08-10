@@ -15,6 +15,7 @@ class HomeController extends Controller
     }
 
     public function about(){
-        return View('about');
+        $name = "Lee Tzilantonis";
+        return view('about', compact('name'));
     }
 }
