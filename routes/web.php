@@ -1,13 +1,10 @@
 <?php
 
-Route::get('/', 'HomeController@index');
-Route::get('/contact', 'HomeController@contact');
-Route::get('/about', 'HomeController@about');
+Route::get('/', 'HomeController@index')->name('home.index');
+Route::get('/pages/about', 'PagesController@about')->name('pages.about');
+Route::get('/pages', 'PagesController@index')->name('pages.index');
 
-Route::get('/categories', 'PagesController@categories');
+// Add logout route to allow user to logout with GET request, default only allows POST
+Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
-Route::get('/movies', 'PagesController@movies');
-
-Route::get('/login', 'UserController@login');
-Route::get('/logout', 'UserController@logout');
-Route::get('/register', 'UserController@register');
+Auth::routes();

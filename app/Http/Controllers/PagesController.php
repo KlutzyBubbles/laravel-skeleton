@@ -6,15 +6,15 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
+    public function __construct() {
+        $this->middleware('auth');
+    }
+
     public function index() {
-        return view('welcome');
+        return view('pages.welcome');
     }
 
-    public function categories() {
-        return view('pages.categories');
-    }
-
-    public function movies() {
-        return view('pages.movies');
+    public function about() {
+        return view('pages.about');
     }
 }
