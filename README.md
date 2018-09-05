@@ -27,6 +27,8 @@ composer install
 npm install
 ```
 
+Key generation should be automatically done on project creation, but if for some reason it isnt there
+
 ```bash
 php artisan key:generate
 ```
