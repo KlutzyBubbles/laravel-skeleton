@@ -13,9 +13,52 @@ This package is only intended for use with composer to create a project much fas
 
 To use the composer template simply use
 
+```bash
+composer create-project klutzybubbles/laravel-skeleton [directory]
 ```
-php composer.phar create-project klutzybubbles/laravel-skeleton [directory]
+
+Some other commands worth using in the setup phase
+
+```bash
+composer install
 ```
+
+```bash
+npm install
+```
+
+```bash
+php artisan key:generate
+```
+
+```bash
+php artisan migrate:refresh
+```
+
+OPTIONAL (You can just register):
+```bash
+php artisan db:seed
+```
+
+After changes to scss or js files in the resources director have been changed you will need to run
+
+```bash
+npm run dev
+```
+
+
+Starting the server
+
+```bash
+php artisan serve
+```
+The above command doesn't play nice with js and css requests, so a workaround is to use PHP directly
+
+```bash
+php -S localhost:8000 -t public
+```
+
+
 
 I don't plan on keeping this repository up to date, but i will push updates every now and then.
 
