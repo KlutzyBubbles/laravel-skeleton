@@ -10480,6 +10480,10 @@ body {
   margin-bottom: 60px;
 }
 
+body > .container {
+  padding: 80px 15px 0;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -10487,10 +10491,6 @@ body {
   height: 60px;
   line-height: 60px;
   background-color: #f5f5f5;
-}
-
-body > .container {
-  padding: 80px 15px 0;
 }
 
 .footer > .container {
